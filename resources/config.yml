@@ -1,0 +1,79 @@
+#
+# BigBrother Configuration
+#
+# Here you can configure BigBrother
+# This file will contain
+# 1. Modules
+# 2. Discord hook
+# 3. commands
+#
+# Advanced configuration will be in a different file
+# The chatcontrol may generate extra files including a configuration file
+#
+# For muting and banning you need a supported punishment plugin!
+# [Litebans, AdvancedBans]
+#
+# If you get confused where to start or what to configure, check out the wiki!
+#
+
+# Here you can toggle and adjust different modules
+Modules:
+
+  chatcontrol:
+    enabled: true
+    # Modes: ["Machine Learning", "Hardcoded"]
+    mode: "Machine Learning"
+    discord_alert: true
+    punishment:
+      enabled: true
+      # Modes: ["kick", "mute", "ban", "delete"]
+      mode: "Delete"
+      # Durations are only applicable for the kick, mute and ban mode
+      duration: 10m
+
+  alt-detection:
+    enabled: true
+    # Modes: ["IP"] (Another mode is being worked on)
+    mode: "IP"
+    discord_alert: true
+    # The punishment will only go in effect when an alt is currently online
+    # This does not prevent the player from having an alt online at a different time
+    punishment:
+      enabled: false
+      # Modes: ["kick", "ban"]
+      mode: "kick"
+      # Durations are only applicable for the mute and ban mode
+      duration: 10m
+
+  anti-vpn:
+    enabled: true
+    # Modes: ["kauri", "proxycheck"]
+    mode: "kauri"
+    license:
+      # For kauri this is optional, in that case there are a free 20k queries a month
+      # Exceeding the monthly/daily limit can cause errors and means BigBrother is unable to keep anti-vpn functionality working
+      key: ""
+    discord_alert: true
+    punishment:
+      enabled: true
+      # Modes: ["Kick", "ban"]
+      mode: "kick"
+      # Durations are only applicable for the mute and ban mode
+      duration: 10m
+
+  suspicious_behavior:
+    enabled: true
+    # Modes: [Permission] (Another mode is being worked on)
+    mode: "Permission"
+    discord_alert: true
+
+# Here you can setup a discord webhook to alert you!
+Discord_hook:
+  url: ""
+
+# Here you can enable/disable certain commands
+# Note that all bigbrother commands will always be available
+commands:
+  clearchat: enabled
+  altcheck: enabled
+  ipcheck: enabled

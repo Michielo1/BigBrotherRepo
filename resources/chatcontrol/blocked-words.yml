@@ -1,0 +1,12 @@
+#################
+# Blocked-words #
+#################
+
+# How sensitive should we be to messages?
+# Options: [0, 1]
+# 0 is only the literal word blocked like: shit
+# 1 also detects small changes like: sh*t
+# If you are getting a lot of false positives, turn the sensitivity down!
+sensitivity: 1
+
+blocked-words: ["shit", "fuck", "bitch"]

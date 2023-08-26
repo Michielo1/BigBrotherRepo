@@ -1,0 +1,24 @@
+#
+# Advanced BigBrother Configuration
+#
+# These configuration settings should be unnecessary to touch unless you want to integrate this plugin further or are running into issues
+# Use the wiki to KNOW what you're changing
+#
+
+# In case you need to change the punishment system
+# Note that overriding this value CAN lead to errors
+punishment_system_advanced:
+  # Manual override. The plugin should be able to detect other punishments plugins unless it's on a bungee server.
+  override: false
+  # What plugin to use. Note that the ONLY accepted values are documented in the wiki.
+  # For this to take effect the override above should be true.
+  hardcode: ""
+
+# In case u want to further configure the chatcontrol AI module
+ml_chatcontrol_advanced:
+  file: "ChatModel.csv" # the file used in training
+  percentagematch: 5.0 # the % used to flag. the % represents how likely it is to be an insult or can be considered insulting.
+  # Options: ["ignore", "delete"]
+  dupe: "ignore"
+  # Options: ["ignore", "delete"]
+  fault: "ignore"

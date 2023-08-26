@@ -1,0 +1,34 @@
+#
+# Message configuration
+#
+
+prefix: "&6&l[BigBrother]"
+
+#
+# These module messages are what the player will see if they get punished
+# as of right now the log messages in chat or discord are not editable
+#
+# Placeholders:
+# '%prefix%' = the prefix set above
+#
+
+Modules:
+  chatcontrol:
+    machine_learning:
+      delete: "&cWe think this sentence might be insulting! Our ai is still training so please help us by giving feedback!"
+      kick: "&cWe think this sentence might be insulting! Our ai is still training so please help us by giving feedback!"
+      mute: "&cWe think this sentence might be insulting! You have been muted!"
+      ban: "&cWe think this sentence might be insulting! You have been banned!"
+    hardcoded:
+      delete: "&cDon't swear!"
+      kick: "&cDon't swear! You have been kicked!"
+      mute: "&cDon't swear! You have been muted!"
+      ban: "&cDon't swear! You have been banned!"
+  altdetector:
+    kick: "&cAlts are not allowed! You have been kicked!"
+    ban: "&cAlts are not allowed! You have been banned!"
+  vpndetector:
+    kick: "&cVPN's are not allowed!"
+    ban: "&cVPN's are not allowed! You have been banned!"
+  suspicious:
+    blacklist: "&cYou have been blacklisted! \n Please contact support!"
