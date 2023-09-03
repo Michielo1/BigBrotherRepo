@@ -25,4 +25,4 @@ As **extra security** we currently have one mode which is **Permission based**. 
 
 # Support
 
-Do you need support or do you want to recommend changes? Check out our discord [here](https://discord.gg/hzmjyjEGu9).
+Do you need support or do you want to recommend changes? Check out our discord [here](https://discord.gg/XkDPdEfcQJ).
