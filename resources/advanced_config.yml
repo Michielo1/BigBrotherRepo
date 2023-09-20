@@ -17,8 +17,24 @@ punishment_system_advanced:
 # In case u want to further configure the chatcontrol AI module
 ml_chatcontrol_advanced:
   file: "ChatModel.csv" # the file used in training
+  auto_update: true
   percentagematch: 5.0 # the % used to flag. the % represents how likely it is to be an insult or can be considered insulting.
+  accountForCase: false # If the machine learning algorithm should account for casing
   # Options: ["ignore", "delete"]
   dupe: "ignore"
   # Options: ["ignore", "delete"]
   fault: "ignore"
+  log_dupe_and_fault: false
+
+# Here you can modify the /ipcheck command
+ipcheck:
+  tag_vpns: true
+  # Options: ["full", "cache"]
+  tag_vpns_method: "cache"
+
+# Here you can enable/disable bypasses
+# Note that if a bypass is enabled you still need the permission node for it
+bypasses:
+  chatcontrol_bypass_enabled: true
+  vpn_bypass_enabled: true
+  alt_bypass_enabled: true
