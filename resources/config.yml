@@ -5,7 +5,8 @@
 # This file will contain
 # 1. Modules
 # 2. Discord hook
-# 3. commands
+# 3. API
+# 4. commands
 #
 # Advanced configuration will be in a different file
 # The chatcontrol may generate extra files including a configuration file
@@ -33,7 +34,7 @@ Modules:
 
   alt-detection:
     enabled: true
-    # Modes: ["IP"] (Another mode is being worked on)
+    # Modes: ["IP", "Location"]
     mode: "IP"
     discord_alert: true
     # The punishment will only go in effect when an alt is currently online
@@ -45,14 +46,9 @@ Modules:
       # Durations are only applicable for the mute and ban mode
       duration: 10m
 
+  # Please note that this will only work if the API works!
   anti-vpn:
     enabled: true
-    # Modes: ["kauri", "proxycheck"]
-    mode: "kauri"
-    license:
-      # For kauri this is optional, in that case there are a free 20k queries a month
-      # Exceeding the monthly/daily limit can cause errors and means BigBrother is unable to keep anti-vpn functionality working
-      key: ""
     discord_alert: true
     punishment:
       enabled: true
@@ -67,9 +63,18 @@ Modules:
     mode: "Permission"
     discord_alert: true
 
-# Here you can setup a discord webhook to alert you!
+# Here you can set up a discord webhook to alert you!
 Discord_hook:
   url: ""
+
+# Here you can set up what API will be used!
+API:
+  # Modes: ["Kauri", "Proxycheck"]
+  mode: "Kauri"
+  license:
+    # For kauri this is optional, in that case there are a free 20k queries a month
+    # Exceeding the monthly/daily limit can cause errors and means BigBrother is unable to keep anti-vpn functionality working
+    key: ""
 
 # Here you can enable/disable certain commands
 # Note that all bigbrother commands will always be available
