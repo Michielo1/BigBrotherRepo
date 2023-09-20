@@ -32,3 +32,25 @@ Modules:
     ban: "&cVPN's are not allowed! You have been banned!"
   suspicious:
     blacklist: "&cYou have been blacklisted! \n Please contact support!"
+
+Commands:
+  clearchat: "&cThe chat has been cleared!"
+  no_permission: "&cYou don't have permission to do this!"
+  disabled: "&cThis command is disabled!"
+  unknown_command: "&cUnknown command!"
+  players_only: "&cThis command is for players only!"
+
+  reload:
+    all_success: "&aYou reloaded the config and model!"
+    config_success: "&aYou reloaded the configuration!"
+    model_success: "&aYou reloaded the chat model!"
+
+  blacklist:
+    ip: "&cPlease use a valid IPV4 address!"
+    # Here you can use %IP% as placeholder
+    success: "&a%IP% was blacklisted!"
+
+  whitelist:
+    ip: "&cPlease use a valid IPV4 address!"
+    # Here you can use %IP% as placeholder
+    success: "&a%IP% was whitelisted!"
