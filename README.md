@@ -10,7 +10,7 @@ For bug reports or other issues visit [this](https://github.com/Michielo1/BigBro
 - **Machine-learning Chatfilter** (With a customizable dataset!)
 - **Anti-VPN** (Supports proxycheck and KauriVPN with 1000 and 20000 **free queries** a month)
 - **Anti-alt** (IP-based alt detection)
-- **Extra protection** (Blacklisting suspicious IP addresses)
+- **Extra protection** (Blacklisting suspicious IP addresses, blacklisting possible rogue staff members)
 - Advanced **discord logging**
 
 # Description
